@@ -1,0 +1,14 @@
+name: shell commands v2
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: echo a string
+        run: echo "Hello world from v2"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
